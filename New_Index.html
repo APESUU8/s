@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>INDEX</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+	
+	<style>
+	body{
+		font-family:calibri light;
+	}
+	* {
+	  box-sizing: border-box;
+	}
+	.bg-img {
+	  /* The image used */
+	  background-image: url("images/loginbg2.jpg");
+	  min-height: 600px;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  position: relative;
+	}
+	.container {
+	  position: absolute;
+	  left:40%;
+	  margin: 20px;
+	  max-width: 300px;
+	  padding: 16px;
+	}
+
+	li{
+		margin:10px;
+	}
+	
+	html{
+		scroll-behavior : smooth;
+	}
+	
+	#whyapes_section{
+		height : 100%;
+		width : 100%;
+		display : inline-block;
+	}
+	video {
+	  object-fit: cover;
+	  width: 100%;
+	  top: 0;
+	  left: 0;
+	}
+	.modal{
+	right:50%;
+	top:15%;
+	bottom:30%;
+	}	
+	.viewport-header {
+	  position: relative;
+	  height: 100vh;
+	}
+	
+	.dropdown-menu li {
+	  position: relative;
+	}
+	.dropdown-menu .dropdown-submenu {
+	  background-color:white;
+	  display: none;
+	  position: absolute;
+	  left: 100%;
+	  top: -5px;
+	}
+	.dropdown-menu .dropdown-submenu-left {
+	  right: 100%;
+	  left: auto;
+	}
+	.dropdown-menu > li:hover > .dropdown-submenu{
+	  display: block;
+	}
+	</style>
+</head>
+<body>		
+	<div class="container_fluid" id="maindiv">
+		<div class="row" style="margin-top:5px;">
+			<div class="col-3">
+				<img style="margin-top:10%; margin-left:-10%;" src="images/logo_text.jpg" width="400px" height="80px">
+			</div>
+			<div class="col-1"></div>
+			<div class="col-8" align="right">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-8">
+							<h6 style="font-family: 'Calibri Light'; margin-top:2%;">
+							 <a href="contactus.html" style="color:#050A30;">Toll Free : 1-888-822-4337 (USA & CANADA)</a>
+							</h6>
+						</div>
+						<div class="col-4" align="justify">
+						<button type="button" class="btn" style="font-family: 'Calibri Light'; font-size:20px; background-color:#070D31; color:white;" data-toggle="modal" data-target="#signupmodal"><b>Free Sign-Up</b></button>						
+						<a type="button" class="btn btn-link" style="font-family: 'Calibri Light'; color:#4f67a5;" href="#login_section"><h5><b>Login</b></h5></a>
+						</div>
+						<div class="container-fluid">
+				        <div class="modal fade" id="signupmodal">
+				            <div class="modal-dialog">
+				                <div class="modal-content">
+					                    <div class="modal-header" style="background-color:skyblue; color:white;">
+						                        <h2 class="modal-title" style="font-family: 'Calibri Light'; color:#050A30;"><b>FREE SIGN-UP</b></h2>
+						                        <button type="button" class="close" style="color:white;" data-dismiss="modal">&times;</button>
+					                    </div>
+				                    <div class="modal-body">
+				                    	<form name="signup_form" method="post" action="questionPage.html" class="needs-validation" novalidate>
+				                    		<div class="form-group">
+					                    		<input class="form-control" type="text" name="fullname" placeholder="FULL NAME" required>
+												<div class="invalid-feedback">
+										      		Please enter the full name or name can't be blank!
+										    	</div>				                    					                    		
+				                    		</div>
+				                    		<div class="form-group">
+				                    			<select class="form-control" id="countrylist" required>
+												    <option value="  " selected>SELECT A COUNTRY</option>
+												    <option value="IN">India</option>
+												    <option value="US">US</option>
+												    <option value="CA">Canada</option>
+				                    				<optgroup label="Other Country">
+												    <option value="--">Not Specified</option>
+												    <option value="AL">Albania</option>
+												    <option value="DZ">Algeria</option>
+												    <option value="AD">Andorra</option>
+												    <option value="AO">Angola</option>
+												    <option value="AR">Argentina</option>
+												    <option value="AM">Armenia</option>
+												    <option value="AU">Australia</option>
+												    <option value="AT">Austria</option>
+												    <option value="BD">Bangladesh</option>
+												    <option value="BY">Belarus</option>
+												    <option value="BE">Belgium</option>
+												    <option value="BZ">Belize</option>
+												    <option value="BJ">Benin</option>
+												    <option value="BT">Bhutan</option>
+												    <option value="BO">Bolivia</option>
+												    <option value="BW">Botswana</option>
+												    <option value="BR">Brazil</option>
+												    <option value="BN">Brunei Darussalam</option>
+												    <option value="BG">Bulgaria</option>
+												    <option value="BI">Burundi</option>
+												    <option value="KH">Cambodia</option>
+												    <option value="CM">Cameroon</option>
+												    <option value="CV">Cape Verde</option>
+												    <option value="TD">Chad</option>
+												    <option value="CL">Chile</option>
+												    <option value="CN">China</option>
+												    <option value="CO">Colombia</option>
+												    <option value="KM">Comoros</option>
+												    <option value="CG">Congo</option>
+												    <option value="CR">Costa Rica</option>
+												    <option value="HR">Croatia (Hrvatska)</option>
+												    <option value="CU">Cuba</option>
+												    <option value="CY">Cyprus</option>
+												    <option value="CZ">Czech Republic</option>
+												    <option value="DK">Denmark</option>
+												    <option value="DJ">Djibouti</option>
+												    <option value="DM">Dominica</option>
+												    <option value="DO">Dominican Republic</option>
+												    <option value="EC">Ecuador</option>
+												    <option value="EG">Egypt</option>
+												    <option value="GQ">Equatorial Guinea</option>
+												    <option value="ER">Eritrea</option>
+												    <option value="EE">Estonia</option>
+												    <option value="ET">Ethiopia</option>
+												    <option value="FJ">Fiji</option>
+												    <option value="FI">Finland</option>
+												    <option value="FR">France</option>
+												    <option value="GA">Gabon</option>
+												    <option value="GM">Gambia</option>
+												    <option value="GE">Georgia</option>
+												    <option value="DE">Germany</option>
+												    <option value="GH">Ghana</option>
+												    <option value="GI">Gibraltar</option>
+												    <option value="GR">Greece</option>
+												    <option value="GL">Greenland</option>
+												    <option value="GD">Grenada</option>
+												    <option value="GP">Guadeloupe</option>
+												    <option value="GU">Guam</option>
+												    <option value="GT">Guatemala</option>
+												    <option value="GN">Guinea</option>
+												    <option value="GW">Guinea-Bissau</option>
+												    <option value="GY">Guyana</option>
+												    <option value="HT">Haiti</option>
+												    <option value="HN">Honduras</option>
+												    <option value="HK">Hong Kong</option>
+												    <option value="HU">Hungary</option>
+												    <option value="IS">Iceland</option>
+												    <option value="ID">Indonesia</option>
+												    <option value="IR">Iran</option>
+												    <option value="IQ">Iraq</option>
+												    <option value="IE">Ireland</option>
+												    <option value="IL">Israel</option>
+												    <option value="IT">Italy</option>
+												    <option value="JM">Jamaica</option>
+												    <option value="JP">Japan</option>
+												    <option value="JO">Jordan</option>
+												    <option value="KZ">Kazakhstan</option>
+												    <option value="KE">Kenya</option>
+												    <option value="KI">Kiribati</option>
+												    <option value="KP">Korea</option>
+												    <option value="KG">Kyrgyzstan</option>
+												    <option value="LV">Latvia</option>
+												    <option value="LB">Lebanon</option>
+												    <option value="LS">Lesotho</option>
+												    <option value="LR">Liberia</option>
+												    <option value="LI">Liechtenstein</option>
+												    <option value="LT">Lithuania</option>
+												    <option value="LU">Luxembourg</option>
+												    <option value="MO">Macau</option>
+												    <option value="MG">Madagascar</option>
+												    <option value="MW">Malawi</option>
+												    <option value="MY">Malaysia</option>
+												    <option value="MV">Maldives</option>
+												    <option value="ML">Mali</option>
+												    <option value="MT">Malta</option>
+												    <option value="MQ">Martinique</option>
+												    <option value="MR">Mauritania</option>
+												    <option value="MU">Mauritius</option>
+												    <option value="YT">Mayotte</option>
+												    <option value="MX">Mexico</option>
+												    <option value="MC">Monaco</option>
+												    <option value="MN">Mongolia</option>
+												    <option value="MS">Montserrat</option>
+												    <option value="MA">Morocco</option>
+												    <option value="MZ">Mozambique</option>
+												    <option value="MM">Myanmar</option>
+												    <option value="NA">Namibia</option>
+												    <option value="NR">Nauru</option>
+												    <option value="NP">Nepal</option>
+												    <option value="NL">Netherlands</option>
+												    <option value="NC">New Caledonia</option>
+												    <option value="NZ">New Zealand</option>
+												    <option value="NI">Nicaragua</option>
+												    <option value="NE">Niger</option>
+												    <option value="NG">Nigeria</option>
+												    <option value="NU">Niue</option>
+												    <option value="NO">Norway</option>
+												    <option value="OM">Oman</option>
+												    <option value="PK">Pakistan</option>
+												    <option value="PW">Palau</option>
+												    <option value="PA">Panama</option>
+												    <option value="PY">Paraguay</option>
+												    <option value="PE">Peru</option>
+												    <option value="PH">Philippines</option>
+												    <option value="PN">Pitcairn</option>
+												    <option value="PL">Poland</option>
+												    <option value="PT">Portugal</option>
+												    <option value="PR">Puerto Rico</option>
+												    <option value="QA">Qatar</option>
+												    <option value="RE">Reunion</option>
+												    <option value="RO">Romania</option>
+												    <option value="RU">Russia</option>
+												    <option value="RW">Rwanda</option>
+												    <option value="WS">Samoa</option>
+												    <option value="SM">San Marino</option>
+												    <option value="SA">Saudi Arabia</option>
+												    <option value="SN">Senegal</option>
+												    <option value="SC">Seychelles</option>
+												    <option value="SL">Sierra Leone</option>
+												    <option value="SG">Singapore</option>
+												    <option value="SK">Slovakia</option>
+												    <option value="SI">Slovenia</option>
+												    <option value="SO">Somalia</option>
+												    <option value="ZA">South Africa</option>
+												    <option value="ES">Spain</option>
+												    <option value="LK">Sri Lanka</option>
+												    <option value="SD">Sudan</option>
+												    <option value="SR">Suriname</option>
+												    <option value="SZ">Swaziland</option>
+												    <option value="SE">Sweden</option>
+												    <option value="CH">Switzerland</option>
+												    <option value="TW">Taiwan</option>
+												    <option value="TJ">Tajikistan</option>
+												    <option value="TZ">Tanzania</option>
+												    <option value="TH">Thailand</option>
+												    <option value="TG">Togo</option>
+												    <option value="TK">Tokelau</option>
+												    <option value="TO">Tonga</option>
+												    <option value="TN">Tunisia</option>
+												    <option value="TR">Turkey</option>
+												    <option value="TM">Turkmenistan</option>
+												    <option value="TV">Tuvalu</option>
+												    <option value="UG">Uganda</option>
+												    <option value="UA">Ukraine</option>
+												    <option value="AE">UAE</option>
+												    <option value="GB">United Kingdom</option>
+												    <option value="UY">Uruguay</option>
+												    <option value="UZ">Uzbekistan</option>
+												    <option value="VU">Vanuatu</option>
+												    <option value="VE">Venezuela</option>
+												    <option value="VN">Viet Nam</option>
+												    <option value="YE">Yemen</option>
+												    <option value="YU">Yugoslavia</option>
+												    <option value="ZM">Zambia</option>
+												    <option value="ZW">Zimbabwe</option>
+												   	</optgroup>
+												</select>
+												<div class="invalid-feedback">
+													Please select the country
+												</div>
+											</div>
+											<div class="form-group">		
+												<input class="form-control" type="text" id="phone"  placeholder="CONTACT NUMBER" required>
+												<div class="invalid-feedback">
+										      		Please enter the contact number!
+										    	</div>				                    		
+				                    		</div>
+				                    		<div class="form-group">
+												<input class="form-control" type="email" id="emailid" placeholder="EMAIL ID" required>
+												<div class="invalid-feedback">
+										      		Please enter the correct Email-ID!
+										    	</div>													
+				                    		</div>
+				                    		<input type="submit" class="btn btn-primary" value="SUBMIT">
+				                    		<input type="reset" class="btn btn-danger" value="RESET"> 			                    						                    		
+										</form>		
+				                    </div>
+				                </div>    
+				            </div>
+				        </div>
+				    </div>
+					</div>
+				</div>			
+				<hr color="black">
+				<ul class="nav justify-content-center" style="margin-left:-8%;">
+					<li class="nav-item">
+						<div class="dropdown">
+							<button class="btn" style="font-family: 'Calibri Light'; color:#4f67a5;" role="button" type="button" id="crmdrop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							   <b>SOLUTIONS</b> 
+							</button>
+							<div class="dropdown-menu" style="font-family: 'Calibri Light'; color:#4f67a5;" aria-labelledby="dropdownMenuButton">
+						  	   <a class="dropdown-item" href="customer_business.html" style="font-family: 'Calibri Light'; color:#4f67a5;"><b>CUSTOMISED BUSINESS</b></a>
+							   <a class="dropdown-item" href="contact_mngt.html" style="font-family: 'Calibri Light'; color:#4f67a5;"><b>CONTACT MANAGEMENT</b></a>
+							   <a class="dropdown-item" href="prospect_creation.html" style="font-family: 'Calibri Light'; color:#4f67a5;"><b>PROSPECT CREATION</b></a>
+						     	<a class="dropdown-item" href="customer_services.html" style="font-family: 'Calibri Light'; color:#4f67a5;"><b>CUSTOMER SERVICES</b></a>
+							   <a class="dropdown-item" href="leads_generation.html" style="font-family: 'Calibri Light'; color:#4f67a5;"><b>LEAD GENERATION</b></a>
+							 </div>
+						</div>
+					</li>
+					<li class="nav-item">
+						<div class="dropdown">
+						  <button class="btn" style="font-family: 'Calibri Light'; color:#4f67a5;" role="button" type="button" id="resourcedrop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						     <b>PRODUCTS</b> 
+						  </button>
+						  <div class="dropdown-menu"aria-labelledby="dropdownMenuButton">			    
+							   <a class="dropdown-item" href="pricing.html"  style="font-family: 'Calibri Light'; color:#4f67a5;"><b>PRICING</b></a>
+							   <a class="dropdown-item" href="forecasting.html" style="font-family: 'Calibri Light'; color:#4f67a5;"><b>FORECASTING</b></a>
+							   <a class="dropdown-item" href="sales_execution.html"  style="font-family: 'Calibri Light'; color:#4f67a5;"><b>SALES EXECUTION</b></a>
+						       <a class="dropdown-item" href="activity_tracking.html" style="font-family: 'Calibri Light'; color:#4f67a5;"><b>ACTIVITY TRACKING</b></a>
+						  	   <a class="dropdown-item" href="communication.html"  style="font-family: 'Calibri Light'; color:#4f67a5;"><b>COMMUNICATION</b></a>
+						  </div>
+						</div>
+					</li>
+					<li class="nav-item">
+						<div class="dropdown">
+						  <button class="btn" style="font-family: 'Calibri Light'; color:#4f67a5;" role="button" type="button" id="servicedrop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						     <b>SERVICES</b> 
+						  </button>
+						  <div class="dropdown-menu" style="font-family: 'Calibri Light'; color:#4f67a5;" aria-labelledby="dropdownMenuButton">
+						    <a class="dropdown-item" href="sales_services.html" style="font-family: 'Calibri Light'; color:#4f67a5;"><b>SALES SERVICES</b></a>
+						    <a class="dropdown-item" href="presales_activity.html" style="font-family: 'Calibri Light'; color:#4f67a5;"><b>PRE-SALES ACTIVITY</b></a>
+							<a class="dropdown-item" href="marketing_solutions.html" style="font-family: 'Calibri Light'; color:#4f67a5;"><b>MARKETING SOLUTIONS</b></a>
+						    <a class="dropdown-item" href="client_onboarding.html" style="font-family: 'Calibri Light'; color:#4f67a5;"><b>CLIENT ONBOARDING</b></a>  
+						    <a class="dropdown-item" href="hr_services.html" style="font-family: 'Calibri Light'; color:#4f67a5;"><b>HR MANAGEMENT</b></a>
+							<a class="dropdown-item" href="case_studies.html"  style="font-family: 'Calibri Light'; color:#4f67a5;"><b>CASE STUDIES</b></a>
+						  </div>
+						</div>
+					</li>
+					<li class="nav-item">
+					    <div class="dropdown open">
+			                <button class="btn" href="#" role="button" style="font-family: 'Calibri Light'; color:#4f67a5;" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			                   <b>INDUSTRIES</b>
+			                </button>
+			                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+				                <li class="nav-item dropdown "><button class="dropdown-item" style="font-family: 'Calibri Light'; color:#4f67a5; text-align:left;" href="#"><b>SERVICE-BASED INDUSTRY</b></button>
+					                    <ul class="dropdown-submenu" style="text-align:left;">
+					                    		<a class="dropdown-item" href="healthcare.html" style="font-family: 'Calibri Light'; color:#4f67a5;"><b>HEALTH CARE</b></a>
+							                    <a class="dropdown-item" href="logistics_services.html" style="font-family: 'Calibri Light'; color:#4f67a5;"><b>LOGISTICS SERVICES</b></a>
+							                    <a class="dropdown-item" href="it_enabled_services.html" style="font-family: 'Calibri Light'; color:#4f67a5;"><b>IT-ENABLED SERVICES</b></a>
+							                    <a class="dropdown-item" href="telecommunication.html" style="font-family: 'Calibri Light'; color:#4f67a5;"><b>TELE-COMMUNICATION</b></a>
+							                    <a class="dropdown-item" href="travel.html" style="font-family: 'Calibri Light'; color:#4f67a5;"><b>HOSPITALITY & TOURISM</b></a>
+							                    <a class="dropdown-item" href="entertainment.html" style="font-family: 'Calibri Light'; color:#4f67a5;"><b>MEDIA & ENTERTAINMENT</b></a>
+										</ul>
+				                </li>
+				                <li class="nav-item dropdown "><button class="dropdown-item" href="#" style="font-family: 'Calibri Light'; color:#4f67a5;"><b>PRODUCT-BASED INDUSTRY</b></button>
+					                    <ul class="dropdown-submenu"  style="text-align:left;">
+						                       <a class="dropdown-item" href="consumer_products.html" style="font-family: 'Calibri Light'; color:#4f67a5;"><b>CONSUMER GOODS</b></a>
+						                       <a class="dropdown-item" href="chemical_industry.html" style="font-family: 'Calibri Light'; color:#4f67a5;"><b>CHEMICAL INDUSTRY</b></a>
+						                       <a class="dropdown-item" href="real_estate_industry.html" style="font-family: 'Calibri Light'; color:#4f67a5;"><b>REAL-ESTATE INDUSTRY</b></a>
+						                       <a class="dropdown-item" href="industrial_products.html" style="font-family: 'Calibri Light'; color:#4f67a5;"><b>INDUSTRIAL PRODUCTS</b></a>
+						                       <a class="dropdown-item" href="manufacturing_industry.html" style="font-family: 'Calibri Light'; color:#4f67a5;"><b>MANUFACTURING INDUSTRY</b></a>
+					                    </ul>
+				                 </li>
+			                </ul>
+			             </div>	
+					</li>					
+					<li class="nav-item">
+						<div class="dropdown">
+						  <button class="btn" style="font-family: 'Calibri Light'; color:#4f67a5;" role="button" type="button" id="resourcedrop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						     <b>RESOURCES</b> 
+						  </button>
+						  <div class="dropdown-menu" style="font-family: 'Calibri Light'; color:#4f67a5;" aria-labelledby="dropdownMenuButton">
+						    <a class="dropdown-item" href="analytic_reports.html" style="font-family: 'Calibri Light'; color:#4f67a5;"><b>ANALYTICS</b></a>
+							<a class="dropdown-item" href="sales_reports.html"  style="font-family: 'Calibri Light'; color:#4f67a5;"><b>SALES REPORTS</b></a>
+							<a class="dropdown-item" href="product_reports.html"  style="font-family: 'Calibri Light'; color:#4f67a5;"><b>PRODUCT REPORTS</b></a>
+							<a class="dropdown-item" href="dashboard_tools.html"  style="font-family: 'Calibri Light'; color:#4f67a5;"><b>DASHBOARD TOOLS</b></a>
+							<a class="dropdown-item" href="forecasting_reports.html"  style="font-family: 'Calibri Light'; color:#4f67a5;"><b>FORECASTING REPORTS</b></a>
+						  </div>
+						</div>
+					</li>							
+					<li class="nav-item">
+						<a href="#whyapes_section" class="btn" style="font-family: 'Calibri Light'; color:#4f67a5;"><b> WHY APES-CRM? </b></a>
+					</li>
+					<li class="nav-item">
+						<a href="contactus.html" class="btn" style="font-family: 'Calibri Light'; color:#4f67a5 ;"><b>CONTACT US</b></a>
+					</li>					
+				</ul>
+				<br>
+			</div>
+		</div>
+	</div>	
+	<video playsinline autoplay muted loop poster="images/Frontpage_1.jpg" id="bgvid">
+		  <source src="images/BGVIDEO_9.mp4" type="video/mp4">
+	</video>
+	<div id="whyapes_section">
+		<h3 align="center"><br><b>WHY APES CRM?</b></h3>
+		<a href="#maindiv"><img src="images/home2.png" style="margin-top:-7%; margin-left:10px;" width="65px" height="65px"></a>
+	</div>
+	<br><br>
+	<div id="login_section">
+		<div class="bg-img">
+			<a href="#maindiv"><img src="images/home2.png" style="margin-top:15px; margin-left:10px;" width="65px" height="65px"></a><br><br>
+			<form name="login_form" method="post" action="#" class="container needs-validation" novalidate>
+				<h2 align="center" style="font-family:calibri light; color:#4f67a5;"><b>LOGIN</b></h2><br>
+				<div class="form-group">
+					<input class="form-control" type="email" name="email" placeholder="EMAIL-ID" required>
+					<div class="invalid-feedback">
+					Please enter the Email-ID!
+					</div>				                    					                    		
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="password" id="emailid" placeholder="PASSWORD" required>
+					<div class="invalid-feedback">
+					Please enter the password!
+					</div>													
+				</div>
+				<input style="margin-left:22%;" type="submit" class="btn btn-primary" id="log_sub" value="SUBMIT">
+				<input type="reset" class="btn btn-danger" id="log_reset"value="RESET">
+				<button class="btn btn-link" data-dismiss="modal" data-toggle="modal" data-target="#signupmodal" style="color:white; margin-left:20%"><b>NEW USER SIGNUP?</b></button>				                    						                    		
+			</form>		    
+		</div>		
+	</div>	
+</body>
+<script type="text/javascript">
+$('#countrylist').on('click',function() {	 
+	  var value1 = $(this).val();
+		if(value1 == "IN"){
+			  document.getElementById("phone").setAttribute("value","+91");
+		}
+		else if(value1 == "US"){
+			  document.getElementById("phone").setAttribute("value","+1");
+		}
+		else if(value1 == "CA"){
+			  document.getElementById("phone").setAttribute("value","+1");
+		}	
+		else if(value1 == "AL"){
+			  document.getElementById("phone").setAttribute("value","+355");
+		}	
+		else if(value1 == "DZ"){
+			  document.getElementById("phone").setAttribute("value","+213");
+		}	
+		else if(value1 == "AD"){
+			  document.getElementById("phone").setAttribute("value","+376");
+		}	
+		else if(value1 == "AO"){
+			  document.getElementById("phone").setAttribute("value","+244");
+		}	
+		else if(value1 == "AR"){
+			  document.getElementById("phone").setAttribute("value","+54");
+		}	
+		else if(value1 == "AM"){
+			  document.getElementById("phone").setAttribute("value","+374");
+		}	
+		else if(value1 == "AU"){
+			  document.getElementById("phone").setAttribute("value","+61");
+		}	
+		else if(value1 == "AT"){
+			  document.getElementById("phone").setAttribute("value","+43");
+		}		
+		else if(value1 == "BD"){
+			  document.getElementById("phone").setAttribute("value","+880");
+		}	
+		else if(value1 == "BY"){
+			  document.getElementById("phone").setAttribute("value","+375");
+		}	
+		else if(value1 == "BE"){
+			  document.getElementById("phone").setAttribute("value","+32");
+		}	
+		else if(value1 == "BZ"){
+			  document.getElementById("phone").setAttribute("value","+501");
+		}	
+		else if(value1 == "BJ"){
+			  document.getElementById("phone").setAttribute("value","+229");
+		}	
+		else if(value1 == "BT"){
+			  document.getElementById("phone").setAttribute("value","+975");
+		}
+		else if(value1 == "BO"){
+			  document.getElementById("phone").setAttribute("value","+591");
+		}	
+		else if(value1 == "BW"){
+			  document.getElementById("phone").setAttribute("value","+267");
+		}	
+		else if(value1 == "BR"){
+			  document.getElementById("phone").setAttribute("value","+55");
+		}	
+		else if(value1 == "BN"){
+			  document.getElementById("phone").setAttribute("value","+673");
+		}	
+		else if(value1 == "BG"){
+			  document.getElementById("phone").setAttribute("value","+359");
+		}	
+		else if(value1 == "BI"){
+			  document.getElementById("phone").setAttribute("value","+257");
+		}	
+		else if(value1 == "KH"){
+			  document.getElementById("phone").setAttribute("value","+855");
+		}	
+		else if(value1 == "CM"){
+			  document.getElementById("phone").setAttribute("value","+237");
+		}	
+		else if(value1 == "CV"){
+			  document.getElementById("phone").setAttribute("value","+238");
+		}	
+		else if(value1 == "TD"){
+			  document.getElementById("phone").setAttribute("value","+235");
+		}	
+		else if(value1 == "CL"){
+			  document.getElementById("phone").setAttribute("value","+56");
+		}	
+		else if(value1 == "CN"){
+			  document.getElementById("phone").setAttribute("value","+86");
+		}	
+		else if(value1 == "CO"){
+			  document.getElementById("phone").setAttribute("value","+57");
+		}	
+		else if(value1 == "KM"){
+			  document.getElementById("phone").setAttribute("value","+269");
+		}	
+		else if(value1 == "CG"){
+			  document.getElementById("phone").setAttribute("value","+242");
+		}	
+		else if(value1 == "CR"){
+			  document.getElementById("phone").setAttribute("value","+506");
+		}	
+		else if(value1 == "HR"){
+			  document.getElementById("phone").setAttribute("value","+385");
+		}	
+		else if(value1 == "CU"){
+			  document.getElementById("phone").setAttribute("value","+53");
+		}	
+		else if(value1 == "CY"){
+			  document.getElementById("phone").setAttribute("value","+357");
+		}	
+		else if(value1 == "CZ"){
+			  document.getElementById("phone").setAttribute("value","+420");
+		}	
+		else if(value1 == "DK"){
+			  document.getElementById("phone").setAttribute("value","+45");
+		}	
+		else if(value1 == "DJ"){
+			  document.getElementById("phone").setAttribute("value","+253");
+		}	
+		else if(value1 == "DM"){
+			  document.getElementById("phone").setAttribute("value","+1");
+		}	
+		else if(value1 == "DO"){
+			  document.getElementById("phone").setAttribute("value","+1");
+		}	
+		else if(value1 == "EC"){
+			  document.getElementById("phone").setAttribute("value","+593");
+		}	
+		else if(value1 == "EG"){
+			  document.getElementById("phone").setAttribute("value","+20");
+		}	
+		else if(value1 == "GQ"){
+			  document.getElementById("phone").setAttribute("value","+240");
+		}	
+		else if(value1 == "ER"){
+			  document.getElementById("phone").setAttribute("value","+291");
+		}	
+		else if(value1 == "EE"){
+			  document.getElementById("phone").setAttribute("value","+372");
+		}	
+		else if(value1 == "ET"){
+			  document.getElementById("phone").setAttribute("value","+251");
+		}	
+		else if(value1 == "FJ"){
+			  document.getElementById("phone").setAttribute("value","+679");
+		}	
+		else if(value1 == "FI"){
+			  document.getElementById("phone").setAttribute("value","+358");
+		}	
+		else if(value1 == "FR"){
+			  document.getElementById("phone").setAttribute("value","+33");
+		}	
+		else if(value1 == "GA"){
+			  document.getElementById("phone").setAttribute("value","+241");
+		}	
+		else if(value1 == "GM"){
+			  document.getElementById("phone").setAttribute("value","+220");
+		}	
+		else if(value1 == "GE"){
+			  document.getElementById("phone").setAttribute("value","+995");
+		}	
+		else if(value1 == "DE"){
+			  document.getElementById("phone").setAttribute("value","+49");
+		}	
+		else if(value1 == "GH"){
+			  document.getElementById("phone").setAttribute("value","+233");
+		}	
+		else if(value1 == "GI"){
+			  document.getElementById("phone").setAttribute("value","+350");
+		}	
+		else if(value1 == "GR"){
+			  document.getElementById("phone").setAttribute("value","+30");
+		}	
+		else if(value1 == "GL"){
+			  document.getElementById("phone").setAttribute("value","+299");
+		}	
+		else if(value1 == "GD"){
+			  document.getElementById("phone").setAttribute("value","+1");
+		}	
+		else if(value1 == "GP"){
+			  document.getElementById("phone").setAttribute("value","+590");
+		}	
+		else if(value1 == "GU"){
+			  document.getElementById("phone").setAttribute("value","+1");
+		}	
+		else if(value1 == "GT"){
+			  document.getElementById("phone").setAttribute("value","+502");
+		}	
+		else if(value1 == "GN"){
+			  document.getElementById("phone").setAttribute("value","+224");
+		}	
+		else if(value1 == "GW"){
+			  document.getElementById("phone").setAttribute("value","+245");
+		}	
+		else if(value1 == "GY"){
+			  document.getElementById("phone").setAttribute("value","+592");
+		}	
+		else if(value1 == "HT"){
+			  document.getElementById("phone").setAttribute("value","+509");
+		}	
+		else if(value1 == "HN"){
+			  document.getElementById("phone").setAttribute("value","+504");
+		}	
+		else if(value1 == "HK"){
+			  document.getElementById("phone").setAttribute("value","+852");
+		}	
+		else if(value1 == "HU"){
+			  document.getElementById("phone").setAttribute("value","+36");
+		}	
+		else if(value1 == "IS"){
+			  document.getElementById("phone").setAttribute("value","+354");
+		}	
+		else if(value1 == "ID"){
+			  document.getElementById("phone").setAttribute("value","+62");
+		}	
+		else if(value1 == "IR"){
+			  document.getElementById("phone").setAttribute("value","+98");
+		}	
+		else if(value1 == "IQ"){
+			  document.getElementById("phone").setAttribute("value","+964");
+		}	
+		else if(value1 == "IE"){
+			  document.getElementById("phone").setAttribute("value","+353");
+		}	
+		else if(value1 == "IL"){
+			  document.getElementById("phone").setAttribute("value","+972");
+		}	
+		else if(value1 == "IT"){
+			  document.getElementById("phone").setAttribute("value","+39");
+		}	
+		else if(value1 == "JM"){
+			  document.getElementById("phone").setAttribute("value","+1");
+		}	
+		else if(value1 == "JP"){
+			  document.getElementById("phone").setAttribute("value","+81");
+		}	
+		else if(value1 == "JO"){
+			  document.getElementById("phone").setAttribute("value","+962");
+		}	
+		else if(value1 == "KZ"){
+			  document.getElementById("phone").setAttribute("value","+7");
+		}	
+		else if(value1 == "KE"){
+			  document.getElementById("phone").setAttribute("value","+254");
+		}	
+		else if(value1 == "KI"){
+			  document.getElementById("phone").setAttribute("value","+686");
+		}	
+		else if(value1 == "KP"){
+			  document.getElementById("phone").setAttribute("value","+82");
+		}	
+		else if(value1 == "KG"){
+			  document.getElementById("phone").setAttribute("value","+996");
+		}	
+		else if(value1 == "LV"){
+			  document.getElementById("phone").setAttribute("value","+371");
+		}	
+		else if(value1 == "LB"){
+			  document.getElementById("phone").setAttribute("value","+961");
+		}	
+		else if(value1 == "LS"){
+			  document.getElementById("phone").setAttribute("value","+266");
+		}	
+		else if(value1 == "LR"){
+			  document.getElementById("phone").setAttribute("value","+231");
+		}	
+		else if(value1 == "LI"){
+			  document.getElementById("phone").setAttribute("value","+423");
+		}	
+		else if(value1 == "LT"){
+			  document.getElementById("phone").setAttribute("value","+370");
+		}	
+		else if(value1 == "LU"){
+			  document.getElementById("phone").setAttribute("value","+352");
+		}	
+		else if(value1 == "MO"){
+			  document.getElementById("phone").setAttribute("value","+853");
+		}	
+		else if(value1 == "MW"){
+			  document.getElementById("phone").setAttribute("value","+265");
+		}	
+		else if(value1 == "MY"){
+			  document.getElementById("phone").setAttribute("value","+60");
+		}	
+		else if(value1 == "MV"){
+			  document.getElementById("phone").setAttribute("value","+960");
+		}	
+		else if(value1 == "ML"){
+			  document.getElementById("phone").setAttribute("value","+223");
+		}	
+		else if(value1 == "MT"){
+			  document.getElementById("phone").setAttribute("value","+356");
+		}	
+		else if(value1 == "MQ"){
+			  document.getElementById("phone").setAttribute("value","+596");
+		}	
+		else if(value1 == "MR"){
+			  document.getElementById("phone").setAttribute("value","+222");
+		}	
+		else if(value1 == "MU"){
+			  document.getElementById("phone").setAttribute("value","+230");
+		}	
+		else if(value1 == "YT"){
+			  document.getElementById("phone").setAttribute("value","+262");
+		}	
+		else if(value1 == "MX"){
+			  document.getElementById("phone").setAttribute("value","+52");
+		}	
+		else if(value1 == "MC"){
+			  document.getElementById("phone").setAttribute("value","+377");
+		}	
+		else if(value1 == "MN"){
+			  document.getElementById("phone").setAttribute("value","+976");
+		}		
+		else if(value1 == "MS"){
+			  document.getElementById("phone").setAttribute("value","+1");
+		}	
+		else if(value1 == "MA"){
+			  document.getElementById("phone").setAttribute("value","+212");
+		}	
+		else if(value1 == "MZ"){
+			  document.getElementById("phone").setAttribute("value","+258");
+		}	
+		else if(value1 == "MM"){
+			  document.getElementById("phone").setAttribute("value","+95");
+		}	
+		else if(value1 == "NA"){
+			  document.getElementById("phone").setAttribute("value","+264");
+		}	
+		else if(value1 == "NR"){
+			  document.getElementById("phone").setAttribute("value","+674");
+		}	
+		else if(value1 == "NP"){
+			  document.getElementById("phone").setAttribute("value","+977");
+		}	
+		else if(value1 == "NL"){
+			  document.getElementById("phone").setAttribute("value","+31");
+		}	
+		else if(value1 == "NC"){
+			  document.getElementById("phone").setAttribute("value","+687");
+		}	
+		else if(value1 == "NZ"){
+			  document.getElementById("phone").setAttribute("value","+64");
+		}	
+		else if(value1 == "NI"){
+			  document.getElementById("phone").setAttribute("value","+505");
+		}	
+		else if(value1 == "NE"){
+			  document.getElementById("phone").setAttribute("value","+227");
+		}	
+		else if(value1 == "NG"){
+			  document.getElementById("phone").setAttribute("value","+234");
+		}	
+		else if(value1 == "NU"){
+			  document.getElementById("phone").setAttribute("value","+683");
+		}	
+		else if(value1 == "NO"){
+			  document.getElementById("phone").setAttribute("value","+47");
+		}	
+		else if(value1 == "OM"){
+			  document.getElementById("phone").setAttribute("value","+968");
+		}	
+		else if(value1 == "PK"){
+			  document.getElementById("phone").setAttribute("value","+92");
+		}	
+		else if(value1 == "PW"){
+			  document.getElementById("phone").setAttribute("value","+680");
+		}	
+		else if(value1 == "PA"){
+			  document.getElementById("phone").setAttribute("value","+507");
+		}	
+		else if(value1 == "PY"){
+			  document.getElementById("phone").setAttribute("value","+595");
+		}	
+		else if(value1 == "PE"){
+			  document.getElementById("phone").setAttribute("value","+51");
+		}	
+		else if(value1 == "PH"){
+			  document.getElementById("phone").setAttribute("value","+63");
+		}	
+		else if(value1 == "PN"){
+			  document.getElementById("phone").setAttribute("value","+64");
+		}	
+		else if(value1 == "PL"){
+			  document.getElementById("phone").setAttribute("value","+48");
+		}	
+		else if(value1 == "PT"){
+			  document.getElementById("phone").setAttribute("value","+351");
+		}	
+		else if(value1 == "PR"){
+			  document.getElementById("phone").setAttribute("value","+1");
+		}	
+		else if(value1 == "QA"){
+			  document.getElementById("phone").setAttribute("value","+974");
+		}	
+		else if(value1 == "RE"){
+			  document.getElementById("phone").setAttribute("value","+262");
+		}	
+		else if(value1 == "RO"){
+			  document.getElementById("phone").setAttribute("value","+40");
+		}	
+		else if(value1 == "RU"){
+			  document.getElementById("phone").setAttribute("value","+7");
+		}	
+		else if(value1 == "RW"){
+			  document.getElementById("phone").setAttribute("value","+250");
+		}	
+		else if(value1 == "WS"){
+			  document.getElementById("phone").setAttribute("value","+685");
+		}	
+		else if(value1 == "SM"){
+			  document.getElementById("phone").setAttribute("value","+378");
+		}	
+		else if(value1 == "SA"){
+			  document.getElementById("phone").setAttribute("value","+966");
+		}	
+		else if(value1 == "SN"){
+			  document.getElementById("phone").setAttribute("value","+221");
+		}	
+		else if(value1 == "SC"){
+			  document.getElementById("phone").setAttribute("value","+248");
+		}	
+		else if(value1 == "SL"){
+			  document.getElementById("phone").setAttribute("value","+232");
+		}	
+		else if(value1 == "SG"){
+			  document.getElementById("phone").setAttribute("value","+65");
+		}	
+		else if(value1 == "SK"){
+			  document.getElementById("phone").setAttribute("value","+421");
+		}	
+		else if(value1 == "SI"){
+			  document.getElementById("phone").setAttribute("value","+386");
+		}	
+		else if(value1 == "SO"){
+			  document.getElementById("phone").setAttribute("value","+252 ");
+		}	
+		else if(value1 == "ZA"){
+			  document.getElementById("phone").setAttribute("value","+27");
+		}	
+		else if(value1 == "ES"){
+			  document.getElementById("phone").setAttribute("value","+34");
+		}	
+		else if(value1 == "LK"){
+			  document.getElementById("phone").setAttribute("value","+94");
+		}	
+		else if(value1 == "SD"){
+			  document.getElementById("phone").setAttribute("value","+249");
+		}	
+		else if(value1 == "SR"){
+			  document.getElementById("phone").setAttribute("value","+597");
+		}	
+		else if(value1 == "SZ"){
+			  document.getElementById("phone").setAttribute("value","+268");
+		}	
+		else if(value1 == "SE"){
+			  document.getElementById("phone").setAttribute("value","+46");
+		}	
+		else if(value1 == "CH"){
+			  document.getElementById("phone").setAttribute("value","+41");
+		}	
+		else if(value1 == "TW"){
+			  document.getElementById("phone").setAttribute("value","+886");
+		}	
+		else if(value1 == "TJ"){
+			  document.getElementById("phone").setAttribute("value","+992");
+		}	
+		else if(value1 == "TZ"){
+			  document.getElementById("phone").setAttribute("value","+255");
+		}	
+		else if(value1 == "TH"){
+			  document.getElementById("phone").setAttribute("value","+255");
+		}	
+		else if(value1 == "TG"){
+			  document.getElementById("phone").setAttribute("value","+228");
+		}	
+		else if(value1 == "TK"){
+			  document.getElementById("phone").setAttribute("value","+690");
+		}	
+		else if(value1 == "TO"){
+			  document.getElementById("phone").setAttribute("value","+676");
+		}	
+		else if(value1 == "TN"){
+			  document.getElementById("phone").setAttribute("value","+216");
+		}	
+		else if(value1 == "TR"){
+			  document.getElementById("phone").setAttribute("value","+90");
+		}	
+		else if(value1 == "TM"){
+			  document.getElementById("phone").setAttribute("value","+993");
+		}	
+		else if(value1 == "TV"){
+			  document.getElementById("phone").setAttribute("value","+688");
+		}	
+		else if(value1 == "UG"){
+			  document.getElementById("phone").setAttribute("value","+256");
+		}	
+		else if(value1 == "UA"){
+			  document.getElementById("phone").setAttribute("value","+380");
+		}	
+		else if(value1 == "AE"){
+			  document.getElementById("phone").setAttribute("value","+971");
+		}	
+		else if(value1 == "GB"){
+			  document.getElementById("phone").setAttribute("value","+44");
+		}	
+		else if(value1 == "UY"){
+			  document.getElementById("phone").setAttribute("value","+598");
+		}	
+		else if(value1 == "UZ"){
+			  document.getElementById("phone").setAttribute("value","+998");
+		}	
+		else if(value1 == "VU"){
+			  document.getElementById("phone").setAttribute("value","+678");
+		}	
+		else if(value1 == "VE"){
+			  document.getElementById("phone").setAttribute("value","+58");
+		}	
+		else if(value1 == "VN"){
+			  document.getElementById("phone").setAttribute("value","+84");
+		}	
+		else if(value1 == "YE"){
+			  document.getElementById("phone").setAttribute("value","+967");
+		}	
+		else if(value1 == "YU"){
+			  document.getElementById("phone").setAttribute("value","+38");
+		}	
+		else if(value1 == "ZM"){
+			  document.getElementById("phone").setAttribute("value","+260");
+		}	
+		else if(value1 == "ZW"){
+			  document.getElementById("phone").setAttribute("value","+263");
+		}
+	});
+
+(function () {
+	  'use strict'
+
+	  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+	  var forms = document.querySelectorAll('.needs-validation')
+
+	  // Loop over them and prevent submission
+	  Array.prototype.slice.call(forms)
+	    .forEach(function (form) {
+	      form.addEventListener('submit', function (event) {
+	        if (!form.checkValidity()) {
+	          event.preventDefault()
+	          event.stopPropagation()
+	        }
+
+	        form.classList.add('was-validated')
+	      }, false)
+	    })
+	})()
+</script>
+</html>
